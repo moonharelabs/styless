@@ -52,8 +52,6 @@ styless:
 #header_pages:
 # - about.md
 
-# Build settings
-theme: styless
 
 plugins:
  - jekyll-feed
