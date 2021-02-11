@@ -1,9 +1,23 @@
----
-#
-# By default, content added below the "---" mark will appear in the home page
-# between the top bar and the list of recent posts.
-# To change the home page layout, edit the _layouts/home.html file.
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-#
-layout: home
----
+# Styless
+
+*Styless is an unstyled Jekyll theme for writers*.
+
+*Running `bundle show styless` will provide you with the local path to your current theme version.*
+
+
+[Theme preview](https://moonharelabs.github.io/styless/)
+
+![styless theme preview](/screenshot.png)
+
+## Installation
+
+Add this line to your Jekyll site's Gemfile:
+
+```ruby
+gem "styless"
+```
+
+And then execute:
+
+    $ bundle
+
