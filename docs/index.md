@@ -42,7 +42,7 @@ If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll loc
 
 ### Configure Styless
 
-- [See configuration options]({{ site.baseurl }}{% link configuration.md %})
+- [See configuration options](configuration)
 
 ---
 
