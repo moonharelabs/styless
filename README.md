@@ -9,70 +9,66 @@
     <br><br><br>
 </p>
 
-## Installation
+## Getting started
+### Dependencies
+Styless is built for [Jekyll](https://jekyllrb.com/), a static site generator. View the [quick start guide](https://jekyllrb.com/) for more information. Styless requires no special plugins and can run on GitHub Pages’ standard Jekyll compiler. The [Jekyll SEO Tag plugin](https://github.com/jekyll/jekyll-seo-tag) is included by default (no need to run any special installation) to inject SEO and open graph metadata on docs pages. For information on how to configure SEO and open graph metadata visit the [Jekyll SEO Tag usage guide](https://jekyll.github.io/jekyll-seo-tag/usage/).
 
-### Github Pages Installation
-Add Styless to your Jekyll site’s _config.yml as a remote theme
+### Quick start: Use as a GitHub Pages remote theme
+
+1. Add Styless to your Jekyll site's `_config.yml` as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
 ```yaml
 remote_theme: moonharelabs/styless
 ```
-> You must have GitHub Pages enabled on your repo, one or more Markdown files, and a _config.yml file. See an example repository
+<small>You must have GitHub Pages enabled on your repo, one or more Markdown files, and a `_config.yml` file. [See an example repository](https://github.com/moonharelabs/styless/tree/main/docs)</small>
 
-### Local Installation
-Add this line to your Jekyll site's Gemfile:
 
-```ruby
+### Local installation: Use the gem-based theme
+
+1. Install the Ruby Gem
+```bash
+$ gem install styless
+```
+```yaml
+# .. or add it to your your Jekyll site’s Gemfile
 gem "styless"
 ```
-
-And add this line to your Jekyll site's `_config.yml`:
-
+2. Add Styless to your Jekyll site’s `_config.yml`
 ```yaml
-theme: styless
+theme: "styless"
 ```
+3. Run you local Jekyll server
+```bash
+$ jekyll serve
+```
+```bash
+# .. or if you're using a Gemfile (bundler)
+$ bundle exec jekyll serve
+```
+4. Point your web browser to [http://localhost:4000](http://localhost:4000)
 
-And then execute:
+If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
 
-    $ bundle
+### Configure Styless
 
-Or install it yourself as:
+- [See configuration options](configuration)
 
-    $ gem install styless
+---
 
-Alternatively, you can run it inside Docker while developing your site
+## About the project
 
-    $ docker-compose up
+Styless is &copy; 2021-{{ "now" | date: "%Y" }} by @ksengine.
 
-## Usage
+### License
 
-[View the documentation](https://moonharelabs.github.io/styless/) for usage information.
+Styless is distributed by an [Unlicense License](https://github.com/moonharelabs/styless/tree/main/LICENSE).
 
-## Contributing
+### Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/moonharelabs/styless. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+When contributing to this repository, please first discuss the change you wish to make via issue,
+email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/moonharelabs/styless#contributing).
 
-### Submitting code changes:
+### Code of Conduct
 
-- Open a [Pull Request](https://github.com/moonharelabs/styless/pulls)
-- Ensure all CI tests pass
-- Await code review
-- Bump the version number in `styless.gemspec` and `package.json` according to [semantic versioning](https://semver.org/).
+Styless is committed to fostering a welcoming community.
 
-### Design and development principles of this theme:
-
-1. As few dependencies as possible
-2. No build script needed
-3. First class mobile experience
-4. Make the content shine
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is set up just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When the theme is released, only the files in `_layouts`, `_includes`, and `_sass` tracked with Git will be released.
-
-## License
-
-The theme is available as open source under the terms of the [Unlicense License](http://opensource.org/licenses/unlicense).
+[View our Code of Conduct](https://github.com/moonharelabs/styless/tree/main/CODE_OF_CONDUCT.md) on our GitHub repository.
