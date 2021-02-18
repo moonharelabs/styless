@@ -1,2 +1,4 @@
-
-Test1
+、、、python
+def function(args):
+    return result
+、、、
