@@ -12,3 +12,33 @@ Styless is built for [Jekyll](https://jekyllrb.com/), a static site generator. V
 remote_theme: moonharelabs/styless
 ```
 <small>You must have GitHub Pages enabled on your repo, one or more Markdown files, and a `_config.yml` file. [See an example repository](https://github.com/moonharelabs/styless/tree/main/docs)</small>
+
+
+### Local installation: Use the gem-based theme
+
+1. Install the Ruby Gem
+```bash
+$ gem install styless
+```
+```yaml
+# .. or add it to your your Jekyll site’s Gemfile
+gem "styless"
+```
+2. Add Styless to your Jekyll site’s `_config.yml`
+```yaml
+theme: "styless"
+```
+3. Run you local Jekyll server
+```bash
+$ jekyll serve
+```
+```bash
+# .. or if you're using a Gemfile (bundler)
+$ bundle exec jekyll serve
+```
+4. Point your web browser to [http://localhost:4000](http://localhost:4000)
+
+If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
+
+
+
