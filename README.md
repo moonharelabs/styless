@@ -3,26 +3,24 @@
 </p>
 <br><br>
 <p align="center">
-    <h1 align="center">Just the Docs</h1>
-    <p align="center">A modern, highly customizable, and responsive Jekyll theme for documentation with built-in search.<br>Easily hosted on GitHub Pages with few dependencies.</p>
+    <h1 align="center">Styless</h1>
+    <p align="center">A modern, highly customizable, and unstyled Jekyll theme for developers with built-in dark mode.<br>Easily hosted on GitHub Pages with few dependencies.</p>
     <p align="center"><strong><a href="https://pmarsceill.github.io/just-the-docs/">See it in action!</a></strong></p>
     <br><br><br>
 </p>
-
-![jtd](https://user-images.githubusercontent.com/896475/47384541-89053c80-d6d5-11e8-98dc-dba16e192de9.gif)
 
 ## Installation
 
 Add this line to your Jekyll site's Gemfile:
 
 ```ruby
-gem "just-the-docs"
+gem "styless"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: just-the-docs
+theme: styless
 ```
 
 And then execute:
@@ -31,7 +29,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install just-the-docs
+    $ gem install styless
 
 Alternatively, you can run it inside Docker while developing your site
 
@@ -39,18 +37,18 @@ Alternatively, you can run it inside Docker while developing your site
 
 ## Usage
 
-[View the documentation](https://pmarsceill.github.io/just-the-docs/) for usage information.
+[View the documentation](https://moonharelabs.github.io/styless/) for usage information.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/pmarsceill/just-the-docs. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/moonharelabs/styless. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ### Submitting code changes:
 
-- Open a [Pull Request](https://github.com/pmarsceill/just-the-docs/pulls)
+- Open a [Pull Request](https://github.com/moonharelabs/styless/pulls)
 - Ensure all CI tests pass
 - Await code review
-- Bump the version number in `just-the-docs.gemspec` and `package.json` according to [semantic versioning](https://semver.org/).
+- Bump the version number in `styless.gemspec` and `package.json` according to [semantic versioning](https://semver.org/).
 
 ### Design and development principles of this theme:
 
@@ -69,4 +67,4 @@ When the theme is released, only the files in `_layouts`, `_includes`, and `_sas
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+The theme is available as open source under the terms of the [Unlicense License](http://opensource.org/licenses/unlicense).
