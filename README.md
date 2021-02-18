@@ -11,6 +11,14 @@
 
 ## Installation
 
+### Github Pages Installation
+Add Styless to your Jekyll site’s _config.yml as a remote theme
+```yaml
+remote_theme: moonharelabs/styless
+```
+> You must have GitHub Pages enabled on your repo, one or more Markdown files, and a _config.yml file. See an example repository
+
+### Local Installation
 Add this line to your Jekyll site's Gemfile:
 
 ```ruby
