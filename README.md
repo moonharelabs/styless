@@ -1,4 +1,7 @@
-<br><br>
+![Gem](https://img.shields.io/gem/dt/styless?logo=rubygems&style=for-the-badge)
+![Gem](https://img.shields.io/gem/v/styless?logo=rubygems&style=for-the-badge)
+
+
 <p align="center">
     <h1 align="center">Styless</h1>
     <p align="center">A modern, highly customizable, and unstyled Jekyll theme for developers with built-in dark mode.<br>Easily hosted on GitHub Pages with few dependencies.</p>
