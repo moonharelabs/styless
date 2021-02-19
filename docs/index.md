@@ -43,9 +43,21 @@ $ bundle exec jekyll serve
 
 If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
 
-### Configure Styless
+### Customize Styless
+You can use any css framework with styless. Just add your libraries to `_includes/head.html file in your site.
 
-- [See configuration options](configuration)
+#### bootstrap - https://getbootstrap.com/
+<code>_includes/head.html</code>
+```html
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+```
+<code>Examples(some file like `index.md`)</code>
+```markdown
+[Link button](http://example.com/){: .btn .btn-primary }
+```
+```html
+<button type="button" class="btn btn-primary">Primary</button>
+```
 
 ### Dark Theme
 Styless has a built-in dark theme. Styless automatically selects dark theme, if brpwser users selected darktjeme from system settings. But you can easily toggle it.
