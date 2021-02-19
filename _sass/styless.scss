@@ -182,7 +182,7 @@ template {
 
 * {max-width: 100%;}
 
-.highlight {overflow: auto;}
+.highlight .highlight{overflow: auto;}
 .highlight table td { padding: 5px; padding: 0.3125rem}
 .highlight table pre { margin: 0; }
 .highlight .cm {
@@ -439,7 +439,7 @@ template {
     filter: progid:DXImageTransform.Microsoft.Light();
   }
 
-  .highlight {border: 1px solid gray;}
+  .highlight .highlight{border: 1px solid gray;}
 
   .highlight table td {
     padding: 5px;
@@ -661,18 +661,17 @@ template {
   }
 }
 
-html.dark {
-    color: rgb(191, 191, 191);
-    background: rgb(31, 31, 31) !important;
-    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1" intercept="0" /><feFuncG type="linear" slope="1" intercept="0" /><feFuncB type="linear" slope="1" intercept="0" /></feComponentTransfer><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1" /><feFuncG type="linear" slope="1" /><feFuncB type="linear" slope="1" /></feComponentTransfer><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="1 0 0 0 0 0 1.01 0 0 0 0 0 1 0 0 0 0 0 1 0" /></filter></svg>#filter');
-    -webkit-filter: contrast(100%) brightness(100%) saturate(100%);
-    filter: contrast(100%) brightness(100%) saturate(100%);
-    filter: progid:DXImageTransform.Microsoft.Light();
-}
-
 .dark {
   color: rgb(191, 191, 191);
-  background-color: rgb(31, 31, 31);
+  background: rgb(31, 31, 31) !important;
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1" intercept="0" /><feFuncG type="linear" slope="1" intercept="0" /><feFuncB type="linear" slope="1" intercept="0" /></feComponentTransfer><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1" /><feFuncG type="linear" slope="1" /><feFuncB type="linear" slope="1" /></feComponentTransfer><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="1 0 0 0 0 0 1.01 0 0 0 0 0 1 0 0 0 0 0 1 0" /></filter></svg>#filter');
+  -webkit-filter: contrast(100%) brightness(100%) saturate(100%);
+  filter: contrast(100%) brightness(100%) saturate(100%);
+  filter: progid:DXImageTransform.Microsoft.Light();
+
+  body {
+    background-color: rgb(31, 31, 31);
+  }
 
   a {
     color: rgb(140, 140, 250);
@@ -705,7 +704,7 @@ html.dark {
     color: rgb(191, 191, 191);
   }
 
-  .highlight {border: 1px solid gray;}
+  .highlight .highlight{border: 1px solid gray;}
 
   .highlight table td {
     padding: 5px;
