@@ -180,6 +180,8 @@ template {
   display: none
 }
 
+* {max-width: 100%;}
+
 .highlight table td { padding: 5px; padding: 0.3125rem}
 .highlight table pre { margin: 0; }
 .highlight .cm {
@@ -435,6 +437,8 @@ template {
     filter: contrast(100%) brightness(100%) saturate(100%);
     filter: progid:DXImageTransform.Microsoft.Light();
   }
+
+  .highlight {border: 1px solid gray;}
 
   .highlight table td {
     padding: 5px;
@@ -699,6 +703,8 @@ html.dark {
   font {
     color: rgb(191, 191, 191);
   }
+
+  .highlight {border: 1px solid gray;}
 
   .highlight table td {
     padding: 5px;
