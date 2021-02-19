@@ -1,7 +1,6 @@
 ---
 layout: page
 ---
-<img width="100%" height="auto" src="front.jpg">
 # Styless - The unstyled and fully customizeable Jekyll theme
 You can use your own styles or your favourite frontend frameworks with **Styless** Jekyll theme that is easily customizable and hosted on GitHub Pages.
 
@@ -48,6 +47,20 @@ If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll loc
 
 - [See configuration options](configuration)
 
+### Dark Theme
+Styless has a built-in dark theme. Styless automatically selects dark theme, if brpwser users selected darktjeme from system settings. But you can easily toggle it.
+<button onclick="document.documentElement.classList.add("dark");">Enable Dark Theme</button>
+```html
+<button onclick="document.documentElement.classList.add("dark");">Enable Dark Theme</button>
+```
+<button onclick="document.documentElement.classList.remove("dark");">Disable Dark Theme</button>
+```html
+<button onclick="document.documentElement.classList.remove("dark");">Disable Dark Theme</button>
+```
+<button onclick="document.documentElement.classList.toggle("dark");">Toggle Dark Theme</button>
+```html
+<button onclick="document.documentElement.classList.toggle("dark");">Toggle Dark Theme</button>
+```
 ---
 
 ## About the project
