@@ -7,7 +7,7 @@
     <h1 align="center">Styless</h1>
     <p align="center">A modern, highly customizable, and unstyled Jekyll theme for developers with built-in dark mode.<br>Easily hosted on GitHub Pages with few dependencies.</p>
     <p align="center"><strong><a target="_blank" href="https://moonharelabs.github.io/styless">See it in action!</a></strong></p>
-    <br><br><br>
+    <br>
 </p>
 
 |![](screenshot.jpg)|![](dark-screenshot.jpg)|
