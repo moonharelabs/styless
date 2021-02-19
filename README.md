@@ -1,5 +1,6 @@
 ![Gem](https://img.shields.io/gem/dt/styless?logo=rubygems&style=for-the-badge)
 ![Gem](https://img.shields.io/gem/v/styless?logo=rubygems&style=for-the-badge)
+![GitHub deployments](https://img.shields.io/github/deployments/moonharelabs/styless/github-pages?label=Github%20Pages&logo=jekyll&logoColor=red&style=for-the-badge)
 
 
 <p align="center">
