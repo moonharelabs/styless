@@ -47,6 +47,26 @@ If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll loc
 
 - [See configuration options](configuration)
 
+### Dark Theme
+Styless has a built-in dark theme. Styless automatically selects dark theme, if brpwser users selected darktjeme from system settings. But you can easily toggle it.
+
+<button onclick="document.documentElement.classList.add('dark');">Enable Dark Theme</button>
+
+```html
+<button onclick="document.documentElement.classList.add('dark');">Enable Dark Theme</button>
+```
+
+<button onclick="document.documentElement.classList.remove('dark');">Disable Dark Theme</button>
+
+```html
+<button onclick="document.documentElement.classList.remove('dark');">Disable Dark Theme</button>
+```
+
+<button onclick="document.documentElement.classList.toggle('dark');">Toggle Dark Theme</button>
+
+```html
+<button onclick="document.documentElement.classList.toggle('dark');">Toggle Dark Theme</button>
+```
 ---
 
 ## About the project
