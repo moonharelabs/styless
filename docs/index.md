@@ -48,7 +48,7 @@ If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll loc
 You can use any css framework with styless. Just add your libraries to `_includes/head.html file in your site.
 
 #### bootstrap
-<button(https://getbootstrap.com/)
+<button><a href="https://getbootstrap.com/">Learn Bootstrap</a></button>
 
 <button><a href="bootstrap">Demo(Bootstrap with Styless)</a></button>
 
