@@ -3,7 +3,8 @@ layout: page
 ---
 # Styless - The unstyled and fully customizeable Jekyll theme
 You can use your own styles or your favourite frontend frameworks with **Styless** Jekyll theme that is easily customizable and hosted on GitHub Pages.
-
+|![styless screenshot](https://github.com/MoonHareLabs/styless/raw/main/screenshot.jpg)|![styless dark mode screenshot](https://github.com/MoonHareLabs/styless/raw/main/dark-screenshot.jpg)|
+|-|-|
 ## Getting started
 ### Dependencies
 Styless is built for [Jekyll](https://jekyllrb.com/), a static site generator. View the [quick start guide](https://jekyllrb.com/) for more information. Styless requires no special plugins and can run on GitHub Pages’ standard Jekyll compiler. The [Jekyll SEO Tag plugin](https://github.com/jekyll/jekyll-seo-tag) is included by default (no need to run any special installation) to inject SEO and open graph metadata on docs pages. For information on how to configure SEO and open graph metadata visit the [Jekyll SEO Tag usage guide](https://jekyll.github.io/jekyll-seo-tag/usage/).
@@ -47,8 +48,10 @@ If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll loc
 You can use any css framework with styless. Just add your libraries to `_includes/head.html file in your site.
 
 #### bootstrap
-[Learn Bootstrap](https://getbootstrap.com/)
-<a href="bootstrap">Demo(Bootstrap with Styless)</a>
+<button(https://getbootstrap.com/)
+
+<button><a href="bootstrap">Demo(Bootstrap with Styless)</a></button>
+
 <code>_includes/head.html</code>
 ```html
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
