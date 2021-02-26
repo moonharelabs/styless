@@ -5,7 +5,7 @@ layout: page
 You can use your own styles or your favourite frontend frameworks with **Styless** Jekyll theme that is easily customizable and hosted on GitHub Pages.
 
 |![styless screenshot](https://github.com/MoonHareLabs/styless/raw/main/screenshot.jpg)|![styless dark mode screenshot](https://github.com/MoonHareLabs/styless/raw/main/dark-screenshot.jpg)|
-|-|-|
+|:-:|:-:|
 |Light|Dark|
 
 ## Getting started
