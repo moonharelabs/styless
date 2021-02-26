@@ -63,7 +63,7 @@ _includes/head.html
 ```
 
 Examples(some file like `index.md`)
-```
+```markdown
 [Link button](http://example.com/){: .btn .btn-primary }
 <button type="button" class="btn btn-primary">Primary</button>
 ```
