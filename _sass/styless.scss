@@ -768,3 +768,422 @@ pre {
 .highlight {
   background-color: #f8f8f8;
 }
+
+.dark {
+a {
+  color: rgb(140, 140, 250);
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+embed[type="application/pdf"] {
+  filter: invert(90%);
+}
+
+html {
+  color: rgb(191, 191, 191);
+  background: rgb(31, 31, 31) !important;
+}
+
+body {
+  background-color: rgb(31, 31, 31);
+  background-image: none !important;
+}
+
+input,
+select,
+textarea,
+button {
+  color: rgb(191, 191, 191);
+  background-color: rgb(31, 31, 31);
+}
+
+font {
+  color: rgb(191, 191, 191);
+}
+
+html {
+  filter: contrast(100%) brightness(100%) saturate(100%);
+}
+
+.NIGHTEYE_Filter {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  pointer-events: none;
+  z-index: 2147483647;
+}
+
+.NIGHTEYE_YellowFilter {
+  background: rgba(255, 255, 0, 0.15);
+  opacity: 0;
+}
+
+.NIGHTEYE_BlueFilter {
+  background: rgba(0, 0, 255, 0.15);
+  opacity: 0;
+}
+
+.NIGHTEYE_DimFilter {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+.NIGHTEYE_TransformZ {
+  transform: translateZ(0px);
+}
+
+body {
+  color: rgb(191, 191, 191);
+  background-color: rgb(28, 28, 33);
+}
+
+a {
+  color: rgb(153, 189, 230);
+}
+
+hr,
+.rule {
+  border-bottom-color: rgb(54, 54, 54);
+}
+
+.markdown-body .absent {
+  color: rgb(230, 153, 159);
+}
+
+.markdown-body hr {
+  background-color: rgb(51, 51, 51);
+}
+
+.markdown-body blockquote {
+  color: rgb(186, 191, 196);
+}
+
+.markdown-body kbd {
+  color: rgb(184, 191, 199);
+  background-color: rgb(31, 31, 31);
+  border-color: rgb(68, 76, 85) rgb(68, 76, 85) rgb(113, 122, 132);
+  box-shadow: rgb(113, 122, 132) 0px -1px 0px inset;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: rgb(191, 191, 191);
+}
+
+.markdown-body h6 {
+  color: rgb(186, 191, 196);
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  border: 1px solid rgb(54, 54, 54);
+}
+
+.markdown-body table tr {
+  background-color: rgb(28, 28, 33);
+  border-top: 1px solid rgb(68, 76, 85);
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: rgb(33, 33, 33);
+}
+
+.markdown-body img {
+  background-color: rgb(28, 28, 33);
+}
+
+.markdown-body span.frame>span {
+  border: 1px solid rgb(54, 54, 54);
+}
+
+.markdown-body span.frame span img {
+  display: block;
+  float: left;
+}
+
+.markdown-body span.frame span span {
+  color: rgb(191, 191, 191);
+}
+
+.markdown-body code,
+.markdown-body tt {
+  background-color: rgba(31, 31, 31, 0.05);
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: rgb(33, 33, 33);
+}
+
+.markdown-body .csv-data .blob-num {
+  background: rgb(28, 28, 33);
+}
+
+.markdown-body .csv-data th {
+  background: rgb(33, 33, 33);
+}
+
+.highlight .cm {
+  color: rgb(196, 196, 186);
+}
+
+.highlight .cp {
+  color: rgb(191, 191, 191);
+}
+
+.highlight .c1 {
+  color: rgb(196, 196, 186);
+}
+
+.highlight .cs {
+  color: rgb(191, 191, 191);
+}
+
+.highlight .c,
+.highlight .cd {
+  color: rgb(196, 196, 186);
+}
+
+.highlight .err {
+  color: rgb(230, 153, 153);
+  background-color: rgb(75, 47, 47);
+}
+
+.highlight .gd {
+  color: rgb(191, 191, 191);
+  background-color: rgb(69, 17, 17);
+}
+
+.highlight .ge {
+  color: rgb(191, 191, 191);
+}
+
+.highlight .gr {
+  color: rgb(230, 153, 153);
+}
+
+.highlight .gh {
+  color: rgb(191, 191, 191);
+}
+
+.highlight .gi {
+  color: rgb(191, 191, 191);
+  background-color: rgb(17, 69, 17);
+}
+
+.highlight .go {
+  color: rgb(191, 191, 191);
+}
+
+.highlight .gp {
+  color: rgb(191, 191, 191);
+}
+
+.highlight .gu {
+  color: rgb(191, 191, 191);
+}
+
+.highlight .gt {
+  color: rgb(230, 153, 153);
+}
+
+.highlight .kc {
+  color: rgb(191, 191, 191);
+}
+
+.highlight .kd {
+  color: rgb(191, 191, 191);
+}
+
+.highlight .kn {
+  color: rgb(191, 191, 191);
+}
+
+.highlight .kp {
+  color: rgb(191, 191, 191);
+}
+
+.highlight .kr {
+  color: rgb(191, 191, 191);
+}
+
+.highlight .kt {
+  color: rgb(170, 181, 212);
+}
+
+.highlight .k,
+.highlight .kv {
+  color: rgb(191, 191, 191);
+}
+
+.highlight .mf {
+  color: rgb(153, 230, 230);
+}
+
+.highlight .mh {
+  color: rgb(153, 230, 230);
+}
+
+.highlight .il {
+  color: rgb(153, 230, 230);
+}
+
+.highlight .mi {
+  color: rgb(153, 230, 230);
+}
+
+.highlight .mo {
+  color: rgb(153, 230, 230);
+}
+
+.highlight .m,
+.highlight .mb,
+.highlight .mx {
+  color: rgb(153, 230, 230);
+}
+
+.highlight .sb {
+  color: rgb(230, 153, 172);
+}
+
+.highlight .sc {
+  color: rgb(230, 153, 172);
+}
+
+.highlight .sd {
+  color: rgb(230, 153, 172);
+}
+
+.highlight .s2 {
+  color: rgb(230, 153, 172);
+}
+
+.highlight .se {
+  color: rgb(230, 153, 172);
+}
+
+.highlight .sh {
+  color: rgb(230, 153, 172);
+}
+
+.highlight .si {
+  color: rgb(230, 153, 172);
+}
+
+.highlight .sx {
+  color: rgb(230, 153, 172);
+}
+
+.highlight .sr {
+  color: rgb(153, 230, 172);
+}
+
+.highlight .s1 {
+  color: rgb(230, 153, 172);
+}
+
+.highlight .ss {
+  color: rgb(230, 153, 210);
+}
+
+.highlight .s {
+  color: rgb(230, 153, 172);
+}
+
+.highlight .na {
+  color: rgb(153, 230, 230);
+}
+
+.highlight .bp {
+  color: rgb(191, 191, 191);
+}
+
+.highlight .nb {
+  color: rgb(153, 210, 230);
+}
+
+.highlight .nc {
+  color: rgb(170, 181, 212);
+}
+
+.highlight .no {
+  color: rgb(153, 230, 230);
+}
+
+.highlight .nd {
+  color: rgb(177, 205, 205);
+}
+
+.highlight .ni {
+  color: rgb(230, 153, 230);
+}
+
+.highlight .ne {
+  color: rgb(230, 153, 153);
+}
+
+.highlight .nf {
+  color: rgb(230, 153, 153);
+}
+
+.highlight .nl {
+  color: rgb(230, 153, 153);
+}
+
+.highlight .nn {
+  color: rgb(191, 191, 191);
+}
+
+.highlight .nt {
+  color: rgb(153, 153, 230);
+}
+
+.highlight .vc {
+  color: rgb(153, 230, 230);
+}
+
+.highlight .vg {
+  color: rgb(153, 230, 230);
+}
+
+.highlight .vi {
+  color: rgb(153, 230, 230);
+}
+
+.highlight .nv {
+  color: rgb(153, 230, 230);
+}
+
+.highlight .ow {
+  color: rgb(191, 191, 191);
+}
+
+.highlight .o {
+  color: rgb(191, 191, 191);
+}
+
+.highlight .w {
+  color: rgb(191, 191, 191);
+}
+
+.highlight {
+  background-color: rgb(33, 33, 33);
+}
+}
