@@ -1,55 +1,12 @@
 html {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   line-height: 1.5;
-  -webkit-text-size-adjust: 100%
 }
 
 img {
   border-style: none;
   max-width: 100%;
   height: auto;
-}
-
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner,
-button::-moz-focus-inner {
-  border-style: none;
-  padding: 0
-}
-
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring,
-button:-moz-focusring {
-  outline: 1px dotted ButtonText
-}
-
-textarea {
-  overflow: auto
-}
-
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
-  height: auto
-}
-
-[type=search] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px
-}
-
-[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none
-}
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit
-}
-
-[hidden] {
-  display: none
 }
 
 .highlight .highlight {
@@ -340,15 +297,6 @@ textarea {
 .dark {
   a {
     color: rgb(140, 140, 250);
-  }
-  ::-webkit-scrollbar-track-piece {
-    background-color: rgba(255, 255, 255, 0.2) !important;
-  }
-  ::-webkit-scrollbar-track {
-    background-color: rgba(255, 255, 255, 0.3) !important;
-  }
-  ::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.5) !important;
   }
   embed[type="application/pdf"] {
     filter: invert(90%);
