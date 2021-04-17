@@ -27,6 +27,76 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', '{{ site.google_analytics }}', 'auto');
       ga('send', 'pageview');
+      
+      var $jscomp = $jscomp || {};
+$jscomp.scope = {};
+$jscomp.createTemplateTagFirstArg = function(a) {
+  return a.raw = a;
+};
+$jscomp.createTemplateTagFirstArgWithRaw = function(a, b) {
+  a.raw = b;
+  return a;
+};
+$jscomp.arrayIteratorImpl = function(a) {
+  var b = 0;
+  return function() {
+    return b < a.length ? {done:!1, value:a[b++], } : {done:!0};
+  };
+};
+$jscomp.arrayIterator = function(a) {
+  return {next:$jscomp.arrayIteratorImpl(a)};
+};
+$jscomp.makeIterator = function(a) {
+  var b = "undefined" != typeof Symbol && Symbol.iterator && a[Symbol.iterator];
+  return b ? b.call(a) : $jscomp.arrayIterator(a);
+};
+$jscomp.arrayFromIterator = function(a) {
+  for (var b, c = []; !(b = a.next()).done;) {
+    c.push(b.value);
+  }
+  return c;
+};
+$jscomp.arrayFromIterable = function(a) {
+  return a instanceof Array ? a : $jscomp.arrayFromIterator($jscomp.makeIterator(a));
+};
+(function(a) {
+  var b = {variants:{}, plugins:{}, filters:[]};
+  b.styleEl = a.document.createElement("style");
+  b.styleEl.id = "MOONHARE_STYLE_ELEMENT";
+  a.document.head.appendChild(b.styleEl);
+  b.defaultVariant = function(c) {
+    return 1 === c.length ? (Object.keys(this.plugins).forEach(function(e) {
+      if (c[0].startsWith(e)) {
+        return this.plugins[e].call(this, c);
+      }
+    }, this), ["", ""]) : 2 === c.length ? ["." + c.join("\\:"), "{" + c[0] + ": " + c[1] + ";}"] : ["", ""];
+  };
+  b.addStyles = function(c) {
+    this.styleEl.innerHTML = c;
+  };
+  b.clearStyles = function() {
+    this.styleEl.innerHTML = "";
+  };
+  b.generateStyles = function() {
+    var c = [];
+    [].concat($jscomp.arrayFromIterable(a.document.querySelectorAll("*"))).forEach(function(d) {
+      return c = [].concat($jscomp.arrayFromIterable(c), $jscomp.arrayFromIterable(d.classList));
+    });
+    var e = c.map(function(d) {
+      d = d.split(":");
+      return (this.variants[d[0]] || this.defaultVariant).call(this, d);
+    }, this);
+    this.filters.forEach(function(d) {
+      e = d.call(this, e);
+    }, this);
+    return e.flat().join("");
+  };
+  b.start = function() {
+    this.addStyles(this.generateStyles());
+  };
+  "loading" != a.document.readyState ? b.start() : a.document.addEventListener("DOMContentLoaded", b.start);
+  a.moonHare = b;
+})(window);
     </script>
     {% endif %}
   </body>
