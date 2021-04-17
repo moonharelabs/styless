@@ -1,103 +1,103 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-{% seo %}
+    {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/styless.css?v=" | append: site.github.build_revision | relative_url }}">
-  </head>
-  <body>
+</head>
+<body>
     <div class="markdown-body" style="padding-right: 16px;padding-left: 16px;max-width: 1012px;margin-right: auto;margin-left: auto;margin-top: 32px;margin-bottom: 32px;">
-
-      {{ content }}
-
-      {% if site.github.private != true and site.github.license %}
-      <div class="footer" style="padding-top: 16px;margin-top: 32px;color: #586069;border-top: 1px #eaecef solid">
-        This site is open source. {% github_edit_link "Improve this page" %}.
-      </div>
-      {% endif %}
+        {{ content }}
+        {% if site.github.private != true and site.github.license %}
+        <div class="footer" style="padding-top: 16px;margin-top: 32px;color: #586069;border-top: 1px #eaecef solid">
+            This site is open source. {% github_edit_link "Improve this page" %}.
+        </div>
+        {% endif %}
     </div>
     {% if site.google_analytics %}
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', '{{ site.google_analytics }}', 'auto');
-      ga('send', 'pageview');
-      
-      var $jscomp = $jscomp || {};
-$jscomp.scope = {};
-$jscomp.createTemplateTagFirstArg = function(a) {
-  return a.raw = a;
-};
-$jscomp.createTemplateTagFirstArgWithRaw = function(a, b) {
-  a.raw = b;
-  return a;
-};
-$jscomp.arrayIteratorImpl = function(a) {
-  var b = 0;
-  return function() {
-    return b < a.length ? {done:!1, value:a[b++], } : {done:!0};
-  };
-};
-$jscomp.arrayIterator = function(a) {
-  return {next:$jscomp.arrayIteratorImpl(a)};
-};
-$jscomp.makeIterator = function(a) {
-  var b = "undefined" != typeof Symbol && Symbol.iterator && a[Symbol.iterator];
-  return b ? b.call(a) : $jscomp.arrayIterator(a);
-};
-$jscomp.arrayFromIterator = function(a) {
-  for (var b, c = []; !(b = a.next()).done;) {
-    c.push(b.value);
-  }
-  return c;
-};
-$jscomp.arrayFromIterable = function(a) {
-  return a instanceof Array ? a : $jscomp.arrayFromIterator($jscomp.makeIterator(a));
-};
-(function(a) {
-  var b = {variants:{}, plugins:{}, filters:[]};
-  b.styleEl = a.document.createElement("style");
-  b.styleEl.id = "MOONHARE_STYLE_ELEMENT";
-  a.document.head.appendChild(b.styleEl);
-  b.defaultVariant = function(c) {
-    return 1 === c.length ? (Object.keys(this.plugins).forEach(function(e) {
-      if (c[0].startsWith(e)) {
-        return this.plugins[e].call(this, c);
-      }
-    }, this), ["", ""]) : 2 === c.length ? ["." + c.join("\\:"), "{" + c[0] + ": " + c[1] + ";}"] : ["", ""];
-  };
-  b.addStyles = function(c) {
-    this.styleEl.innerHTML = c;
-  };
-  b.clearStyles = function() {
-    this.styleEl.innerHTML = "";
-  };
-  b.generateStyles = function() {
-    var c = [];
-    [].concat($jscomp.arrayFromIterable(a.document.querySelectorAll("*"))).forEach(function(d) {
-      return c = [].concat($jscomp.arrayFromIterable(c), $jscomp.arrayFromIterable(d.classList));
-    });
-    var e = c.map(function(d) {
-      d = d.split(":");
-      return (this.variants[d[0]] || this.defaultVariant).call(this, d);
-    }, this);
-    this.filters.forEach(function(d) {
-      e = d.call(this, e);
-    }, this);
-    return e.flat().join("");
-  };
-  b.start = function() {
-    this.addStyles(this.generateStyles());
-  };
-  "loading" != a.document.readyState ? b.start() : a.document.addEventListener("DOMContentLoaded", b.start);
-  a.moonHare = b;
-})(window);
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
     </script>
     {% endif %}
-  </body>
+    {% if site.moonhare-jit %}
+    <script>
+        var $jscomp = $jscomp || {};
+        $jscomp.scope = {};
+        $jscomp.createTemplateTagFirstArg = function(a) {
+          return a.raw = a;
+        };
+        $jscomp.createTemplateTagFirstArgWithRaw = function(a, b) {
+          a.raw = b;
+          return a;
+        };
+        $jscomp.arrayIteratorImpl = function(a) {
+        var b = 0;
+        return function() {
+        return b < a.length ? {done:!1, value:a[b++], } : {done:!0};
+        };
+        };
+        $jscomp.arrayIterator = function(a) {
+        return {next:$jscomp.arrayIteratorImpl(a)};
+        };
+        $jscomp.makeIterator = function(a) {
+        var b = "undefined" != typeof Symbol && Symbol.iterator && a[Symbol.iterator];
+        return b ? b.call(a) : $jscomp.arrayIterator(a);
+        };
+        $jscomp.arrayFromIterator = function(a) {
+        for (var b, c = []; !(b = a.next()).done;) {
+        c.push(b.value);
+        }
+        return c;
+        };
+        $jscomp.arrayFromIterable = function(a) {
+        return a instanceof Array ? a : $jscomp.arrayFromIterator($jscomp.makeIterator(a));
+        };
+        (function(a) {
+        var b = {variants:{}, plugins:{}, filters:[]};
+        b.styleEl = a.document.createElement("style");
+        b.styleEl.id = "MOONHARE_STYLE_ELEMENT";
+        a.document.head.appendChild(b.styleEl);
+        b.defaultVariant = function(c) {
+        return 1 === c.length ? (Object.keys(this.plugins).forEach(function(e) {
+        if (c[0].startsWith(e)) {
+          return this.plugins[e].call(this, c);
+        }
+        }, this), ["", ""]) : 2 === c.length ? ["." + c.join("\\:"), "{" + c[0] + ": " + c[1] + ";}"] : ["", ""];
+        };
+        b.addStyles = function(c) {
+        this.styleEl.innerHTML = c;
+        };
+        b.clearStyles = function() {
+        this.styleEl.innerHTML = "";
+        };
+        b.generateStyles = function() {
+        var c = [];
+        [].concat($jscomp.arrayFromIterable(a.document.querySelectorAll("*"))).forEach(function(d) {
+        return c = [].concat($jscomp.arrayFromIterable(c), $jscomp.arrayFromIterable(d.classList));
+        });
+        var e = c.map(function(d) {
+        d = d.split(":");
+        return (this.variants[d[0]] || this.defaultVariant).call(this, d);
+        }, this);
+        this.filters.forEach(function(d) {
+        e = d.call(this, e);
+        }, this);
+        return e.flat().join("");
+        };
+        b.start = function() {
+        this.addStyles(this.generateStyles());
+        };
+        "loading" != a.document.readyState ? b.start() : a.document.addEventListener("DOMContentLoaded", b.start);
+        a.moonHare = b;
+        })(window);
+    </script>
+    {% endif %}
+</body>
 </html>
