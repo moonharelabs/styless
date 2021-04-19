@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/styless.css?v=" | append: site.github.build_revision | relative_url }}">
+    <script src="{{ "/assets/js/jit.js?v=" | append: site.github.build_revision | relative_url }}"></script>
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
 </head>
 <body>
-    <div style="padding-right: 16px;padding-left: 16px;max-width: 1012px;margin: 32px auto;">
+    <div class="padding-right:16px max-width:1012px margin:32px margin-left:auto margin-right:auto">
         {{ content }}
         {% if site.github.private != true and site.github.license %}
-        <div style="padding-top: 16px;margin-top: 32px;color: #586069;border-top: 1px #eaecef solid">
+        <div class="padding-top:16px margin-top:32px color:#586069 border-top-width:1px border-color:#eaecef border-style:solid">
             This site is open source. {% github_edit_link "Improve this page" %}.
         </div>
         {% endif %}
