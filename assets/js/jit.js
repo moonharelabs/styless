@@ -85,6 +85,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     this.addStyles(this.generateStyles());
   };
 
-  if (window.document.readyState != 'loading') moonHare.start();else window.document.addEventListener('DOMContentLoaded', moonHare.start);
+  if (window.document.readyState != 'loading') moonHare.start();else window.document.addEventListener('DOMContentLoaded', function(){moonHare.start()});
   window.moonHare = moonHare;
 })(window);
