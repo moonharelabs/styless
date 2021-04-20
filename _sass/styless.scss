@@ -1,158 +1,19 @@
-/*! tailwindcss v2.1.1 | MIT License | https://tailwindcss.com */
-
 *,
 ::after,
 ::before {
-    box-sizing: border-box
-}
-
-:root {
-    -moz-tab-size: 4;
-    tab-size: 4
-}
-
-html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: gray
 }
 
 body {
-    margin: 0
+    margin: 0;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 1.5
 }
 
 body {
     font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'
-}
-
-hr {
-    height: 0;
-    color: inherit
-}
-
-abbr[title] {
-    -webkit-text-decoration: underline dotted;
-    text-decoration: underline dotted
-}
-
-b,
-strong {
-    font-weight: bolder
-}
-
-code,
-kbd,
-pre,
-samp {
-    font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
-    font-size: 1em
-}
-
-small {
-    font-size: 80%
-}
-
-sub,
-sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline
-}
-
-sub {
-    bottom: -.25em
-}
-
-sup {
-    top: -.5em
-}
-
-table {
-    text-indent: 0;
-    border-color: inherit
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-    font-family: inherit;
-    font-size: 100%;
-    line-height: 1.15;
-    margin: 0
-}
-
-button,
-select {
-    text-transform: none
-}
-
-[type=button],
-[type=reset],
-[type=submit],
-button {
-    -webkit-appearance: button
-}
-
-::-moz-focus-inner {
-    border-style: none;
-    padding: 0
-}
-
-:-moz-focusring {
-    outline: 1px dotted ButtonText
-}
-
-:-moz-ui-invalid {
-    box-shadow: none
-}
-
-legend {
-    padding: 0
-}
-
-progress {
-    vertical-align: baseline
-}
-
-::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
-    height: auto
-}
-
-[type=search] {
-    -webkit-appearance: textfield;
-    outline-offset: -2px
-}
-
-::-webkit-search-decoration {
-    -webkit-appearance: none
-}
-
-::-webkit-file-upload-button {
-    -webkit-appearance: button;
-    font: inherit
-}
-
-summary {
-    display: list-item
-}
-
-blockquote,
-dd,
-dl,
-figure,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hr,
-p,
-pre {
-    margin: 0
 }
 
 button {
@@ -165,127 +26,8 @@ button:focus {
     outline: 5px auto -webkit-focus-ring-color
 }
 
-fieldset {
-    margin: 0;
-    padding: 0
-}
-
-ol,
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0
-}
-
-html {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    line-height: 1.5
-}
-
-body {
-    font-family: inherit;
-    line-height: inherit
-}
-
-*,
-::after,
-::before {
-    box-sizing: border-box;
-    border-width: 0;
-    border-style: solid;
-    border-color: #e5e7eb
-}
-
-hr {
-    border-top-width: 1px
-}
-
-img {
-    border-style: solid
-}
-
 textarea {
     resize: vertical
-}
-
-input::placeholder,
-textarea::placeholder {
-    opacity: 1;
-    color: #9ca3af
-}
-
-[role=button],
-button {
-    cursor: pointer
-}
-
-table {
-    border-collapse: collapse
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-size: inherit;
-    font-weight: inherit
-}
-
-a {
-    color: inherit;
-    text-decoration: inherit
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-    padding: 0;
-    line-height: inherit;
-    color: inherit
-}
-
-code,
-kbd,
-pre,
-samp {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
-}
-
-audio,
-canvas,
-embed,
-iframe,
-img,
-object,
-svg,
-video {
-    display: block;
-    vertical-align: middle
-}
-
-img,
-video {
-    max-width: 100%;
-    height: auto
-}
-
-blockquote {
-  border-left:1px solid #e5e5e5;
-  margin:0;
-  padding:0 0 0 20px;
-  font-style:italic;
-}
-
-pre {
-  padding:8px 15px;
-  background: #f8f8f8;
-  border-radius:5px;
-  border:1px solid #e5e5e5;
-  overflow-x: auto;
 }
 
 table {
@@ -299,38 +41,29 @@ th, td {
   border-bottom:1px solid #e5e5e5;
 }
 
-dt {
-  color:#444;
-  font-weight:700;
+code,
+kbd,
+pre,
+samp {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
-th {
-  color:#444;
+img,
+video {
+    max-width: 100%;
+    height: auto;
+    border-style: solid
 }
 
-img {
-  max-width:100%;
+blockquote {
+  border-left:1px solid gray;
+  margin:0;
 }
 
-kbd {
-  background-color: #fafbfc;
-  border: 1px solid #c6cbd1;
-  border-bottom-color: #959da5;
-  border-radius: 3px;
-  box-shadow: inset 0 -1px 0 #959da5;
-  color: #444d56;
-  display: inline-block;
-  font-size: 11px;
-  line-height: 10px;
-  padding: 3px 5px;
-  vertical-align: middle;
-}
-
-header {
-  width:270px;
-  float:left;
-  position:fixed;
-  -webkit-font-smoothing:subpixel-antialiased;
+pre {
+  border-radius:5px;
+  border:1px solid gray;
+  overflow-x: auto;
 }
 
 .highlight table td { padding: 5px; }
@@ -598,7 +331,7 @@ header {
     filter: contrast(100%) brightness(100%) saturate(100%);
   }
 
-  .NIGHTEYE_Filter {
+  .filter {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -608,113 +341,23 @@ header {
     z-index: 2147483647;
   }
 
-  .NIGHTEYE_YellowFilter {
+  .yellow-filter {
     background: rgba(255, 255, 0, 0.15);
     opacity: 0;
   }
 
-  .NIGHTEYE_BlueFilter {
+  .blue-filter {
     background: rgba(0, 0, 255, 0.15);
     opacity: 0;
   }
 
-  .NIGHTEYE_DimFilter {
+  .dim-filter {
     background: rgba(0, 0, 0, 0.5);
     opacity: 0;
   }
 
-  .NIGHTEYE_TransformZ {
+  .transform-z {
     transform: translateZ(0px);
-  }
-
-  body {
-    background-color: rgb(28, 28, 33);
-    color: rgb(191, 191, 191);
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: rgb(191, 191, 191);
-  }
-
-  h2 {
-    color: rgb(191, 191, 191);
-  }
-
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: rgb(191, 191, 191);
-  }
-
-  a {
-    color: rgb(153, 198, 230);
-  }
-
-  a:hover,
-  a:focus {
-    color: rgb(153, 204, 230);
-  }
-
-  a small {
-    color: rgb(191, 191, 191);
-  }
-
-  a:hover small {
-    color: rgb(191, 191, 191);
-  }
-
-  blockquote {
-    border-left: 1px solid rgb(51, 51, 51);
-  }
-
-  code,
-  pre {
-    color: rgb(191, 191, 191);
-  }
-
-  pre {
-    background: rgb(33, 33, 33);
-    border: 1px solid rgb(51, 51, 51);
-  }
-
-  th,
-  td {
-    border-bottom: 1px solid rgb(51, 51, 51);
-  }
-
-  dt {
-    color: rgb(191, 191, 191);
-  }
-
-  th {
-    color: rgb(191, 191, 191);
-  }
-
-  kbd {
-    background-color: rgb(31, 31, 31);
-    border-color: rgb(68, 76, 85) rgb(68, 76, 85) rgb(113, 122, 132);
-    box-shadow: rgb(113, 122, 132) 0px -1px 0px inset;
-    color: rgb(184, 191, 199);
-  }
-
-  strong {
-    color: rgb(191, 191, 191);
-  }
-
-  hr {
-    background: rgb(51, 51, 51);
-  }
-
-  @media print, screen and (max-width: 960px) {
-    section {
-      border-color: rgb(51, 51, 51);
-    }
   }
 
   .highlight .cm {
