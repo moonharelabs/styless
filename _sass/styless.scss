@@ -313,10 +313,8 @@ pre {
     filter: invert(90%);
   }
 
-  html {
-    color: rgb(191, 191, 191);
-    background: rgb(31, 31, 31) !important;
-  }
+  color: rgb(191, 191, 191);
+  background: rgb(31, 31, 31) !important;
 
   body {
     background-color: rgb(31, 31, 31);
@@ -335,9 +333,7 @@ pre {
     color: rgb(191, 191, 191);
   }
 
-  html {
-    filter: contrast(100%) brightness(100%) saturate(100%);
-  }
+  filter: contrast(100%) brightness(100%) saturate(100%);
 
   .filter {
     width: 100%;
