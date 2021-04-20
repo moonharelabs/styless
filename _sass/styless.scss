@@ -1,27 +1,9 @@
-*,
-::after,
-::before {
-  box-sizing: border-box;
-  border-color: lightgray;
-}
-
 body {
   margin: 0;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   line-height: 1.5;
-}
-
-button {
-  background-color: transparent;
-  border-style: solid;
-  background-image: none;
-}
-
-button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
 }
 
 textarea {
@@ -35,7 +17,6 @@ table {
 
 th,
 td {
-  text-align: left;
   padding: 5px 10px;
   border-bottom: 1px solid lightgray;
 }
@@ -52,7 +33,6 @@ img,
 video {
   max-width: 100%;
   height: auto;
-  border-style: solid;
 }
 
 blockquote {
@@ -61,7 +41,6 @@ blockquote {
 }
 
 pre {
-  border-radius: 5px;
   border: 1px solid lightgray;
   overflow-x: auto;
 }
@@ -355,19 +334,13 @@ pre {
     opacity: 0;
   }
 
-  .NIGHTEYE_DimFilter {
+  .dim-filter {
     background: rgba(0, 0, 0, 0.5);
     opacity: 0;
   }
 
   .transform-z {
     transform: translateZ(0px);
-  }
-
-  *,
-  ::after,
-  ::before {
-    border-color: rgb(69, 69, 69);
   }
 
   th,
