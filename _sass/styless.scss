@@ -2,7 +2,6 @@
 ::after,
 ::before {
     box-sizing: border-box;
-    border-style: solid;
     border-color: gray
 }
 
@@ -12,12 +11,9 @@ body {
     line-height: 1.5
 }
 
-body {
-    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'
-}
-
 button {
     background-color: transparent;
+    border-style: solid;
     background-image: none
 }
 
