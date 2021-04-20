@@ -2,7 +2,7 @@
 ::after,
 ::before {
     box-sizing: border-box;
-    border-color: gray
+    border-color: lightgray
 }
 
 body {
@@ -34,7 +34,7 @@ table {
 th, td {
   text-align:left;
   padding:5px 10px;
-  border-bottom:1px solid #e5e5e5;
+  border-bottom:1px solid lightgray;
 }
 
 code,
@@ -52,13 +52,13 @@ video {
 }
 
 blockquote {
-  border-left:1px solid gray;
+  border-left:1px solid lightgray;
   margin:0;
 }
 
 pre {
   border-radius:5px;
-  border:1px solid gray;
+  border:1px solid lightgray;
   overflow-x: auto;
 }
 
