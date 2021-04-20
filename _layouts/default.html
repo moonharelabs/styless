@@ -12,11 +12,11 @@
     <![endif]-->
 </head>
 <body>
-    <div class="padding-right:16px max-width:1012px margin:32px margin-left:auto margin-right:auto">
+    <div class="padding:1rem max-width:1012px margin:auto">
         {{ content }}
         {% if site.github.private != true and site.github.license %}
-        <div class="padding-top:16px margin-top:32px color:#586069 border-top-width:1px border-color:#eaecef border-style:solid">
-            This site is open source. {% github_edit_link "Improve this page" %}.
+        <div class="padding:1rem color:lightgray margin-top:1rem border-top-width:1px border-style:solid">
+            <center>This site is open source. {% github_edit_link "Improve this page" %}.</center>
         </div>
         {% endif %}
     </div>
