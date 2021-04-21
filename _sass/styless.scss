@@ -6,19 +6,46 @@ body {
   line-height: 1.5;
 }
 
+ul, ol {
+  padding-left: 2em;
+
+  ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
 textarea {
   resize: vertical;
 }
 
 table {
+  display: block;
   width: 100%;
+  overflow: auto;
   border-collapse: collapse;
-}
 
-th,
-td {
-  padding: 5px 10px;
-  border-bottom: 1px solid lightgray;
+  th {
+    font-weight: bold;
+  }
+
+  th,
+  td {
+    padding: 6px 13px;
+    border: 1px solid lightgray;
+  }
+
+  tr {
+    border-top: 1px solid gray;
+
+    &:nth-child(2n) {
+      background-color: lightgray;
+    }
+  }
+
+    img {
+      background-color: transparent;
+    }
 }
 
 code,
@@ -33,6 +60,13 @@ img,
 video {
   max-width: 100%;
   height: auto;
+  &[align=right] {
+      padding-left: 20px;
+    }
+
+    &[align=left] {
+      padding-right: 20px;
+    }
 }
 
 blockquote {
