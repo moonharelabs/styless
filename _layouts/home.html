@@ -1,12 +1,11 @@
 ---
 layout: default
 ---
-<div style='
-    line-height: 1.5;
-    word-wrap: break-word;
-    max-width: 1012px;
-    margin: 32px auto 32px auto;
-    padding-right: 16px;
-    padding-left: 16px;'>
-  {{ content }}
-</div>
+<div class="padding:1rem max-width:1012px margin:auto">
+    {{ content }}
+    {% if site.github.private != true and site.github.license %}
+    <div class="padding:1rem color:gray margin-top:1rem border-top-width:1px border-style:solid">
+        <center>This site is open source. {% github_edit_link "Improve this page" %}.</center>
+    </div>
+    {% endif %}
+    </div>

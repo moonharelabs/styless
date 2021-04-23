@@ -1,8 +1,12 @@
 ---
-layout: page
+layout: home
 ---
 # Styless - The unstyled and fully customizeable Jekyll theme
 You can use your own styles or your favourite frontend frameworks with **Styless** Jekyll theme that is easily customizable and hosted on GitHub Pages.
+
+|![styless screenshot](https://github.com/MoonHareLabs/styless/raw/main/screenshot.jpg)|![styless dark mode screenshot](https://github.com/MoonHareLabs/styless/raw/main/dark-screenshot.jpg)|
+|:-:|:-:|
+|Light|Dark|
 
 ## Getting started
 ### Dependencies
@@ -47,8 +51,10 @@ If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll loc
 You can use any css framework with styless. Just add your libraries to `_includes/head.html file in your site.
 
 #### bootstrap
-[Learn Bootstrap](https://getbootstrap.com/)
-<a href="bootstrap">Demo(Bootstrap with Styless)</a>
+<button><a href="https://getbootstrap.com/">Learn Bootstrap</a></button>
+
+<button><a href="bootstrap">Demo(Bootstrap with Styless)</a></button>
+
 <code>_includes/head.html</code>
 ```html
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
