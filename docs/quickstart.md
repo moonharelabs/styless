@@ -12,7 +12,7 @@ Styless is built for [Jekyll](https://jekyllrb.com/), a static site generator. V
 ```yaml
 remote_theme: moonharelabs/styless
 ```
-You may also optionally specify a branch, [tag](https://github.com/mmistakes/minimal-mistakes/tags), or commit to use by appending an @ and the Git ref (e.g., `mmistakes/minimal-mistakes@4.9.0` or `mmistakes/minimal-mistakes@bbf3cbc5fd64a3e1885f3f99eb90ba92af84063d`). This is useful when rolling back to older versions of the theme. If you don’t specify a Git ref, the latest on `master` will be used.
+You may also optionally specify a branch, [tag](https://github.com/MoonHareLabs/styless/tags), or commit to use by appending an @ and the Git ref (e.g., `MoonHareLabs/styless@1.1.0` or `MoonHareLabs/styless@bbf3cbc5fd64a3e1885f3f99eb90ba92af84063d`). This is useful when rolling back to older versions of the theme. If you don’t specify a Git ref, the latest on `master`(`main`) will be used.
 
 You must have GitHub Pages enabled on your repo, one or more Markdown files, and a `_config.yml` file. [See an example repository](https://github.com/moonharelabs/styless/tree/main/docs)
 
