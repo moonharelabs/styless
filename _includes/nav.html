@@ -1,4 +1,4 @@
-<ul class="nav-list">
+<div class="height-[100%] width-[160px] position-[fixed] z-index-[1] top-[0] left-[0] background-color-[#111] overflow-x-hidden padding-top-[20px]">
   {%- assign titled_pages = include.pages
         | where_exp:"item", "item.title != nil" -%}
 
@@ -96,4 +96,4 @@
       {%- endunless -%}
     {%- endif -%}
   {%- endfor -%}
-</ul>
+</div>
