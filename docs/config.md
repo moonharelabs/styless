@@ -1,6 +1,7 @@
 
 {% include nav.html pages=site.html_pages %}
 
+
 # Configuration
 
 Jekyll gives you a lot of flexibility to customize how it builds your site. These options can either be specified in a  `_config.yml`  or  `_config.toml`  file placed in your site’s root directory, or can be specified as flags for the  `jekyll`  executable in the terminal.
