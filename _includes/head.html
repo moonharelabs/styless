@@ -1,0 +1,8 @@
+{% seo %}
+{%- if site.normalize | default: true, allow_false: true -%}
+  {% include normalize.html %}
+{%- endif -%}
+{%- if site.darkmode | default: true, allow_false: true -%}
+  {% include dark.html %}
+{%- endif -%}
+{% include custom-head.html %}
