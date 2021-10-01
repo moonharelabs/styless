@@ -4,7 +4,7 @@
 
 <p align="center">
     <h1 align="center">Styless</h1>
-    <p align="center">A modern, highly customizable, and unstyled Jekyll theme.<br><h6 align ="center">Easily hosted on GitHub Pages with few dependencies.</h6></p>
+    <p align="center">A modern, highly customizable, and unstyled Jekyll theme with dark mode.<br><h6 align ="center">Easily hosted on GitHub Pages with few dependencies.</h6></p>
     <p align="center"><strong><a target="_blank" href="https://moonharelabs.github.io/styless">See it in action!</a></strong></p>
 </p>
 
