@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
   spec.name          = "styless"
   spec.version       = "1.2.0"
   spec.authors       = ["Kavindu Santhusa"]
-  spec.email         = ["patrick.marsceill@gmail.com"]
+  spec.email         = ["ksengine.github@gmail.com"]
 
   spec.summary       = %q{The Unstyled Jekyll Theme.}
   spec.homepage      = "https://github.com/moonharelabs/styless"
