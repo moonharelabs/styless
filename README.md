@@ -52,7 +52,7 @@ remote_theme: moonharelabs/styless
 
 ### Customize Styless
 
-You can use any css framework with styless. Just add your libraries to `_includes/custom-head.html file in your site.
+You can use any css framework with styless. Just add your libraries to `_includes/custom-head.html` file in your site.
 
 ## Contributing
 
