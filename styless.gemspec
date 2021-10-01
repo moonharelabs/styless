@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "styless"
-  spec.version       = "1.2.0"
+  spec.version       = "1.3.0"
   spec.authors       = ["Kavindu Santhusa"]
   spec.email         = ["ksengine.github@gmail.com"]
 
