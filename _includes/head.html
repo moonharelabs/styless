@@ -9,8 +9,8 @@
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-{%- if site.normalize | default: true, allow_false: true -%}
-  {% include normalize.html %}
+{%- if site.reset | default: true, allow_false: true -%}
+  {% include reset.html %}
 {%- endif -%}
 {%- if site.darkmode | default: true, allow_false: true -%}
   {% include dark.html %}
