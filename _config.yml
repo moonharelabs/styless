@@ -30,7 +30,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # github_username:  jekyll
 
 darkmode: true
-normalize: true
+reset: true
 
 # Build settings
 
