@@ -129,7 +129,3 @@ These are available out-of-the-box to be used in the front matter for a post.
     </tr>
   </tbody>
 </table>
-
-##### Don't repeat yourself
-
-If you don't want to repeat your frequently used front matter variables over and over, define  [defaults](http://jekyllrb.com/docs/configuration/front-matter-defaults/ "Front Matter defaults")  for them and only override them where necessary (or not at all). This works both for predefined and custom variables.
