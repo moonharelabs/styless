@@ -1,0 +1,16 @@
+{% if site.comments.provider and page.comments %}
+{% case site.comments.provider %}
+  {% when "disqus" %}
+    {% include /comments/disqus.html %}
+  {% when "discourse" %}
+    {% include /comments/discourse.html %}
+  {% when "facebook" %}
+    {% include /comments/facebook.html %}
+  {% when "utterances" %}
+    {% include /comments/utterances.html %}
+  {% when "giscus" %}
+    {% include /comments/giscus.html %}
+  {% when "custom" %}
+    {% include /comments/custom_scripts.html %}
+{% endcase %}
+{% endif %}
