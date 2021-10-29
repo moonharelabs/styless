@@ -12,7 +12,7 @@
 |-|-|
 
 ## Usage
-
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmoonharelabs%2Fstyless%2Ftree%2Fmain%2Fdocs&demo-title=Styless&demo-description=A%20modern%2C%20highly%20customizable%2C%20and%20unstyled%20Jekyll%20theme%20with%20dark%20mode.&demo-url=https%3A%2F%2Fstyless.vercel.app%2F&demo-image=https%3A%2F%2Fgithub.com%2Fmoonharelabs%2Fstyless%2Fraw%2Fmain%2Fdark-screenshot.png)
 ### Dependencies
 Styless is built for [Jekyll](https://jekyllrb.com/), a static site generator. View the [quick start guide](https://jekyllrb.com/) for more information. Styless requires no special plugins and can run on GitHub Pages’ standard Jekyll compiler.
 
