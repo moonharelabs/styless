@@ -1,40 +1,136 @@
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
 *,
 ::before,
 ::after {
   box-sizing: border-box;
 }
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size (opinionated).
+*/
+
 html {
-  line-height: 1.5;
+  line-height: 1.15;
+  /* 1 */
   -webkit-text-size-adjust: 100%;
+  /* 2 */
   -moz-tab-size: 4;
+  /* 3 */
   tab-size: 4;
+  /* 3 */
 }
+
+/*
+Sections
+========
+*/
+
+/**
+1. Remove the margin in all browsers.
+2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 0;
+  /* 1 */
+  font-family:
+    system-ui,
+    -apple-system,
+    /* Firefox supports this but not yet `system-ui` */
+    'Segoe UI',
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji';
+  /* 2 */
 }
+
+/*
+Grouping content
+================
+*/
+
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+
 hr {
   height: 0;
+  /* 1 */
   color: inherit;
+  /* 2 */
 }
+
+/*
+Text-level semantics
+====================
+*/
+
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
 abbr[title] {
   text-decoration: underline dotted;
 }
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+
 b,
 strong {
-  font-weight: bolder;
+  font-weight: 500;
 }
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
 code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo,
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    Consolas,
+    'Liberation Mono',
+    Menlo,
     monospace;
+  /* 1 */
   font-size: 1em;
+  /* 2 */
 }
+
+/**
+Add the correct font size in all browsers.
+*/
+
 small {
   font-size: 80%;
 }
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+
 sub,
 sup {
   font-size: 75%;
@@ -42,89 +138,497 @@ sup {
   position: relative;
   vertical-align: baseline;
 }
+
 sub {
   bottom: -0.25em;
 }
+
 sup {
   top: -0.5em;
 }
+
+/*
+Tabular data
+============
+*/
+
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
 table {
   text-indent: 0;
+  /* 1 */
   border-color: inherit;
+  /* 2 */
 }
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
 button,
 input,
 optgroup,
 select,
 textarea {
   font-family: inherit;
+  /* 1 */
   font-size: 100%;
+  /* 1 */
   line-height: 1.15;
+  /* 1 */
   margin: 0;
+  /* 2 */
 }
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
 button,
 select {
   text-transform: none;
 }
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
 }
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+
 ::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+
 :-moz-focusring {
   outline: 1px dotted ButtonText;
 }
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+
 :-moz-ui-invalid {
   box-shadow: none;
 }
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+
 legend {
   padding: 0;
 }
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
 progress {
   vertical-align: baseline;
 }
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
   height: auto;
 }
-[type="search"] {
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
   -webkit-appearance: textfield;
+  /* 1 */
   outline-offset: -2px;
+  /* 2 */
 }
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
+  /* 1 */
   font: inherit;
+  /* 2 */
 }
+
+/*
+Interactive
+===========
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
 summary {
   display: list-item;
 }
-body * {
-  overflow-x: auto;
+
+
+:root {
+  @media (prefers-reduced-motion: no-preference) {
+    /* Add smooth scrolling */
+    scroll-behavior: smooth;
+  }
 }
-img {
-  max-width: 100%;
-  height: auto;
+
+html {
+  /* Better line height */
+  line-height: 1.5;
 }
+
+body {
+  /* As a best practice, apply a default `background-color`. */
+  background-color: #fff;
+  color: #141414;
+}
+
+hr {
+  margin: 1rem 0;
+  border: 0;
+  border-top: 1px solid;
+  opacity: 0.25;
+}
+
+/* Typography */
+
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+  /* 1. Remove top margins from headings
+      By default, `<h1>`-`<h6>` all receive top and bottom margins. We nuke the top 
+      margin for easier control within type scales as it avoids margin collapsing.
+  */
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/* Reset margins*/
+
+address,
+aside,
+blockquote,
+details,
+dialog,
+form,
+table,
+p,
+ol,
+ul,
+dl,
+blockquote,
+pre {
+  margin: 0 0 1rem 0;
+}
+
+/* Abbreviations */
+
+abbr[title] {
+  /* Add explicit cursor to indicate changed behavior. */
+  cursor: help;
+  /* Prevent the text-decoration to be skipped. */
+  text-decoration-skip-ink: none;
+}
+
+
+/* Address */
+
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
+
+/* Lists */
+
+ol,
+ul {
+  padding-left: 2rem;
+}
+
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+dt {
+  font-weight: 700;
+}
+
+
+dd {
+  margin-bottom: .5rem;
+  margin-left: 0;
+}
+
+
+blockquote {
+  padding-left: 1rem;
+  border-left: 0.25rem solid #d3d3d3;
+}
+
+pre {
+  display: block;
+  /* Don't allow content to break outside */
+  overflow: auto;
+  background-color: #f5f5f5;
+  padding: 1rem;
+}
+
+code {
+  word-wrap: break-word;
+  font-weight: 600;
+}
+
+/* Streamline the style when inside anchors to avoid broken underline and more */
+code a>code {
+  color: inherit;
+}
+
+/* Account for some code outputs that place code tags in pre tags */
+pre code {
+  font-size: inherit;
+  color: inherit;
+  word-break: normal;
+  font-weight: normal;
+}
+
+kbd {
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.875em;
+  border-radius: 0.25rem;
+}
+
+kbd kbd {
+  padding: 0;
+  font-size: 1em;
+}
+
+/* Mark */
+
+mark {
+  padding: 0.1875em;
+  background-color: #fff3cd;
+}
+
+
+/* Links */
+a {
+  color: #0049db;
+  text-decoration: underline;
+}
+
+/* And undo these styles for placeholder links/named anchors (without href).
+It would be more straightforward to just use a[href] in previous block, but that
+causes specificity issues in many other styles that are too complex to fix.
+See https://github.com/twbs/bootstrap/issues/19402 */
+
+a:not([href]):not([class]) {
+  text-decoration: none;
+}
+
+
+/* Figures */
+
+/* Apply a consistent margin strategy (matches our type styles). */
+
+figure {
+  margin: 0 0 1rem;
+}
+
+figcaption {
+  color: #575757;
+}
+
+/* Images and content */
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+/* Tables */
+
+/* Prevent double borders */
+
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    display: block;
-    max-width: 100%;
-    overflow: auto;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+  caption-side: bottom;
+  border-collapse: collapse;
 }
+
+
+caption {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+
+th {
+  /* Matches default `<td>` alignment by inheriting `text-align`. */
+  text-align: inherit;
+  font-weight: 500;
+}
+
+thead,
+tbody,
+tfoot,
+tr,
 td,
 th {
-    border: 1px solid gray;
-    padding: 6px 13px;
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+td,
+th {
+  padding: 0.5rem;
+}
+
+td:first-child,
+th:first-child {
+  padding-left: 0;
+}
+
+thead {
+  border-bottom: 2px solid gray;
+}
+
+tbody tr {
+  border-bottom: 1px solid gray;
+}
+
+
+
+/* Forms */
+
+
+label {
+  /* Allow labels to use `margin` for spacing. */
+  display: inline-block;
+}
+
+
+/* Set the cursor for non-`<button>` buttons */
+
+/* Details at https://github.com/twbs/bootstrap/pull/30562 */
+[role="button"] {
+  cursor: pointer;
+}
+
+button:not(:disabled),
+[type='button']:not(:disabled),
+[type='reset']:not(:disabled),
+[type='submit']:not(:disabled) {
+  /* Opinionated: add "hand" cursor to non-disabled button elements. */
+  cursor: pointer;
+}
+
+
+textarea {
+  /* Textareas should really only resize vertically so they don't break their (horizontal) containers. */
+  resize: vertical;
+}
+
+legend {
+  /* Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.*/
+  padding: 0;
+}
+
+header {
+  background: #f5f5f5;
+}
+
+textarea {
+  max-width: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+article {
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 64rem;
 }
